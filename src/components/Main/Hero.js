@@ -52,7 +52,7 @@ const Hero = () => {
   const words = ["Ceyhun", "Developer", "Engineer"];
   const wait = 3000;
   return (
-    <div className="h-100 w-100 d-flex align-items-center section-content py-5">
+    <div className="h-100 w-100 d-flex align-items-center py-5">
       <div className="row w-100 intro-text align-items-center justify-content-center mx-auto">
         <div className="col-lg-6 col-md-6 col-sm-12 p-5 d-flex align-items-center justify-content-center">
           <h1
