@@ -8,11 +8,15 @@ import Footer from "./Sections/Footer";
 import Contact from "./Sections/Contact";
 import ResumeButton from "./components/Button/ResumeButton";
 import Navbar from "./Sections/Navbar";
+import { useState } from "react";
+import Menu from "./Sections/Menu";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App ">
-      <Navbar />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Main />
       <div className="last-section">
         <Portfolio />

@@ -1,7 +1,40 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import Hamburger from "hamburger-react";
 
-const Navbar = () => {
-  return <div></div>;
+const Navbar = ({ menuOpen, setMenuOpen }) => {
+  return (
+    <div className="navbar">
+      <div className="d-flex align-items-center justify-content-between px-3 w-100">
+        <img src={logo} style={{ height: "70px" }} alt="logo" />
+        <div>
+          {menuOpen ? null : (
+            <div className="navbar-item-container d-none d-md-flex d-lg-flex d-xl-flex align-items-center">
+              <div className="me-5 navbar-item">Home</div>
+              <div className="me-5 navbar-item">Portfolio</div>
+              <div className="navbar-item">Contact</div>
+            </div>
+          )}
+          <div
+            className={
+              menuOpen
+                ? "d-flex"
+                : "d-flex d-md-none d-lg-none d-xl-none align-items-center"
+            }
+          >
+            <Hamburger
+              direction="right"
+              color="#60e5ab"
+              toggled={menuOpen}
+              onToggle={(toggle) => {
+                setMenuOpen(toggle);
+              }}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

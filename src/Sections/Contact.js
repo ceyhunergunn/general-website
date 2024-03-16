@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="mt-5 section-contact">
+    <section className="mt-5 section-contact" id="section-contact">
       <div className="row w-100 mx-auto">
         <div className="col-md-12">
           {" "}

@@ -4,7 +4,7 @@ import Hero from "../components/Main/Hero";
 
 const Main = () => {
   return (
-    <section className="section-hero">
+    <section className="section-hero" id="section-hero">
       <Hero />
       <Banner />
     </section>
