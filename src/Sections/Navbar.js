@@ -10,9 +10,21 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div>
           {menuOpen ? null : (
             <div className="navbar-item-container d-none d-md-flex d-lg-flex d-xl-flex align-items-center">
-              <div className="me-5 navbar-item">Home</div>
-              <div className="me-5 navbar-item">Portfolio</div>
-              <div className="navbar-item">Contact</div>
+              <div className="me-5 navbar-item">
+                <a href="#section-hero" onClick={() => setMenuOpen(false)}>
+                  Home
+                </a>
+              </div>
+              <div className="me-5 navbar-item">
+                <a href="#section-portfolio" onClick={() => setMenuOpen(false)}>
+                  Portfolio
+                </a>
+              </div>
+              <div className="navbar-item">
+                <a href="#section-contact" onClick={() => setMenuOpen(false)}>
+                  Contact
+                </a>
+              </div>
             </div>
           )}
           <div

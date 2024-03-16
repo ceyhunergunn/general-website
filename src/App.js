@@ -18,8 +18,8 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Main />
+      <Portfolio />
       <div className="last-section">
-        <Portfolio />
         <Contact />
         <Footer />
       </div>

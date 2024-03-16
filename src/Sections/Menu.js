@@ -7,7 +7,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       style={{
         width: "100%",
         height: "100%",
-        backgroundColor: "#364148",
+        backgroundColor: "#000",
         position: "fixed",
         top: "0px",
         right: "0px",

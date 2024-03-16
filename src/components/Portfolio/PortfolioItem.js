@@ -46,7 +46,7 @@ const PortfolioItem = ({ logo, img1, img2, name, link, isLink = false }) => {
           leftImage={img1}
           rightImage={img2}
           leftImageLabel="Figma Design"
-          rightImageLabel="Developed Design"
+          rightImageLabel="Developed Page"
           sliderLineColor="#60e5ab"
           leftImageCss={style}
           rightImageCss={style}
