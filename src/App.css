@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
-}
+/* font-family: "Slackside One", cursive; */
+/* font-family: "Caveat", cursive; */
+/* font-family: "Urbanist", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+code {
+  font-family: "Urbanist", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+}
+.menu {
+  z-index: 10;
+  width: min-content;
+}
+.menu .menu-item {
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #ffe4f8;
+  padding: 0.5rem 0;
+  opacity: 0.25;
+  transition: scale 550ms linear, opacity 250ms linear;
+}
+.menu .menu-item {
+  display: block;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #ffe4f8;
+  padding: 0.5rem 0;
+  opacity: 0.15;
+}
+.menu:hover .menu-item:not(:hover) {
+  transform: scale(1);
+  opacity: 0.25;
+  transition: scale 550ms linear, opacity 250ms linear, filter 250ms linear;
+  filter: blur(4px);
+}
+
+.menu .menu-item:hover {
+  transform: scale(1);
+  opacity: 1;
+  transition: scale 550ms linear, opacity 250ms linear;
+}
+
+.section-content > * {
+  z-index: 999;
+}
+
+/* HERO */
+
+/* Cursor */
+.txt {
+  border-right: 0.2rem solid white;
+  padding-right: 0.1rem;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 100;
+  animation: blink 0.5s infinite linear;
+}
+.main-text {
+  font-family: "Madimi One", sans-serif;
+}
+.section-hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.42),
+      rgba(0, 0, 0, 0.92)
+    ),
+    url("assets/bg4.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+@keyframes blink {
+  0% {
+    border-right: 0.2rem solid white;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    border-right: 0.2rem solid transparent;
   }
+  100% {
+    border-right: 0.2rem solid white;
+  }
+}
+
+/* Portfolio */
+
+.section-portfolio {
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url(./assets/bg1.jpg);
+  background-image: url(./assets/bg1.jpg), linear-gradient(to bottom, red, blue); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.12)
+    ),
+    url("assets/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+/* RESUME BUTTON */
+
+.portfolio-area {
+  position: sticky;
+  bottom: 10px;
+  right: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: end;
+  padding: 0 1rem 0 0;
+}
+.portfolio-btn {
+  font-family: "Urbanist", sans-serif;
+  background-color: #60e5ab;
+  border-radius: 100px;
+  width: 120px;
+  height: 30px;
+  padding: 0rem 1rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.open-btn {
+  position: relative;
+  right: -35px;
+  font-family: "Urbanist", sans-serif;
+  background-color: #60e5ab;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 0.21rem 0.21rem;
+  cursor: pointer;
 }
