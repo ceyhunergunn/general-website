@@ -17,7 +17,7 @@ const Banner = () => {
     infinite: true,
     speed: 1000,
     slidesToShow: 9,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 1,
     className: "center",
     centerMode: true,
