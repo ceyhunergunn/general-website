@@ -101,7 +101,7 @@ code {
   }
 }
 
-/* Portfolio */
+/* PORTFOLIO */
 
 .section-portfolio {
   width: 100%;
@@ -113,7 +113,7 @@ code {
       rgba(0, 0, 0, 0.92),
       rgba(0, 0, 0, 0.12)
     ),
-    url("assets/bg1.jpg");
+    url("assets/bg.png");
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -121,16 +121,16 @@ code {
 
 /* RESUME BUTTON */
 
-.portfolio-area {
+.resume-area {
   position: sticky;
   bottom: 10px;
   right: 10px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: end;
-  padding: 0 1rem 0 0;
+  padding: 0 2rem 0 0;
 }
-.portfolio-btn {
+.resume-btn {
   font-family: "Urbanist", sans-serif;
   background-color: #60e5ab;
   border-radius: 100px;
@@ -152,4 +152,79 @@ code {
   height: 40px;
   padding: 0.21rem 0.21rem;
   cursor: pointer;
+}
+
+/* FOOTER & CONTACT */
+
+.last-section {
+  width: 100%;
+  /* background-image: url(./assets/bg1.jpg);
+  background-image: url(./assets/bg1.jpg), linear-gradient(to bottom, red, blue); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.42),
+      rgba(0, 0, 0, 0.02)
+    ),
+    url("assets/bg.png");
+  background-position: 0% center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+/* FOOTER */
+
+.site-footer {
+  padding: 3em 0;
+}
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+.site-footer .social-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #60e5ab;
+  position: relative;
+  border-radius: 50%;
+  font-size: 22px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.site-footer .social-item > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* CONTACT */
+
+.contact-tag {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-tag:hover {
+  color: #888;
+  transition: 0.2s linear;
+}
+
+.site-contact-details,
+.site-contact-details li {
+  padding: 0;
+  margin: 0;
+}
+
+.site-contact-details li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.site-contact-details li > span {
+  color: #2c3e50;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
 }
