@@ -10,6 +10,18 @@ body {
   color: white;
 }
 
+.App {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("assets/bg-portfolio.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -43,13 +55,13 @@ body {
   color: #60e5ab;
 }
 
-.navbar-item-container:hover .navbar-item:not(:hover) {
+.navbar-item-container:hover .navbar-item.navbar-item > a:not(:hover) {
   /* filter: brightness(0.5); */
   color: rgba(96, 229, 171, 0.5);
   transition: 0.2s linear;
 }
 
-.navbar-item-container:not(:hover) .navbar-item:not(:hover) {
+.navbar-item-container:not(:hover) .navbar-item.navbar-item > a:not(:hover) {
   color: #60e5ab;
   font-size: 22px;
   cursor: pointer;
@@ -78,14 +90,14 @@ body {
 .section-hero {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 1)
     ),
     url("assets/bg-hero.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 @keyframes blink {
@@ -107,7 +119,7 @@ body {
   padding-bottom: 80px;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 50%,
@@ -115,7 +127,7 @@ body {
     ),
     url("assets/bg-portfolio.png");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* RESUME BUTTON */
@@ -125,7 +137,7 @@ body {
   bottom: 10px;
   right: 10px !important;
   background-color: #60e5ab;
-  border-radius: 100px;
+  border-radius: 8px;
   width: 120px;
   height: 30px;
   padding: 0rem 1rem;
@@ -151,7 +163,7 @@ body {
   min-height: 100vh;
   padding: 80px 0;
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.52) 50%,
@@ -159,7 +171,7 @@ body {
     ),
     url("assets/bg-contact.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;

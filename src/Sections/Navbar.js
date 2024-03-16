@@ -20,7 +20,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                   Portfolio
                 </a>
               </div>
-              <div className="navbar-item">
+              <div className="me-5 navbar-item">
                 <a href="#section-contact" onClick={() => setMenuOpen(false)}>
                   Contact
                 </a>
