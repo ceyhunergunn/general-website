@@ -6,14 +6,13 @@ const PortfolioItem = ({ logo, img1, img2, name, link, isLink = false }) => {
     borderRadius: "24px",
   };
   return (
-    <div className="col-lg-6 col-md-12 p-3 mx-auto">
+    <div className="col-lg-4 col-md-6 col-sm-12 p-3 mx-auto">
       <div className="d-flex align-items-center justify-content-center mb-3">
-        {" "}
         <img
           src={logo}
           className="me-3"
           alt="allarmia logo"
-          style={{ width: "60px" }}
+          style={{ height: "60px" }}
         />
         <div style={{ fontSize: "24px" }}>{name}</div>
         {isLink === false ? null : (
@@ -41,7 +40,7 @@ const PortfolioItem = ({ logo, img1, img2, name, link, isLink = false }) => {
           </div>
         )}
       </div>
-      <div style={{ width: "90%" }} className="mx-auto">
+      <div style={{ width: "100%" }} className="mx-auto">
         <ReactCompareImage
           leftImage={img1}
           rightImage={img2}

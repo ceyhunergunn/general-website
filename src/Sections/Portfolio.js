@@ -11,10 +11,13 @@ import menu2 from "../assets/menu2.png";
 import PortfolioItem from "../components/Portfolio/PortfolioItem";
 const Portfolio = () => {
   return (
-    <section className="section-portfolio" id="section-portfolio">
+    <section
+      className="section-portfolio d-flex align-items-center justify-content-center flex-column"
+      id="section-portfolio"
+    >
       <div className="col-md-12">
         {" "}
-        <div className="section-heading text-center">
+        <div className="section-heading text-center py-5">
           <h1>
             <strong>Portfolio</strong>
           </h1>
