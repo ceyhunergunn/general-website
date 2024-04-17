@@ -14,7 +14,7 @@ import Menu from "./Sections/Menu";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="App ">
+    <div className="App container">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Main />
