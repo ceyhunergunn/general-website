@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Main/Banner";
+// import Banner from "../components/Main/Banner";
 import Hero from "../components/Main/Hero";
 
 const Main = () => {
@@ -9,7 +9,7 @@ const Main = () => {
       id="section-hero"
     >
       <Hero />
-      <Banner />
+      {/* <Banner /> */}
     </section>
   );
 };

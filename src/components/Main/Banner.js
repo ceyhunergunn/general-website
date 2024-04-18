@@ -1,15 +1,16 @@
 import React from "react";
 import Slider from "react-slick";
 
-import slider1 from "../../assets/html.png";
-import slider2 from "../../assets/css.png";
-import slider3 from "../../assets/bootstrap.png";
-import slider4 from "../../assets/sass.png";
-import slider5 from "../../assets/less.png";
-import slider6 from "../../assets/js.png";
-import slider7 from "../../assets/react.png";
-import slider8 from "../../assets/git.png";
-import slider9 from "../../assets/github.png";
+import slider1 from "../../assets/skills/html.png";
+import slider2 from "../../assets/skills/css.png";
+import slider3 from "../../assets/skills/bootstrap.png";
+import slider4 from "../../assets/skills/sass.png";
+import slider5 from "../../assets/skills/less.png";
+import slider6 from "../../assets/skills/js.png";
+import slider10 from "../../assets/skills/ts.png";
+import slider7 from "../../assets/skills/react.png";
+import slider8 from "../../assets/skills/git.png";
+import slider9 from "../../assets/skills/github.png";
 
 const Banner = () => {
   var settings = {
@@ -208,6 +209,19 @@ const Banner = () => {
               }}
             >
               <img style={{ height: "55px" }} src={slider9} alt="skills" />
+            </div>
+          </div>
+          <div>
+            <div
+              className="d-flex align-items-center justify-content-center mx-auto p-2"
+              style={{
+                borderRadius: "12px",
+                background: "rgba(255,255,255,0.1)",
+                width: "100px",
+                height: "100px",
+              }}
+            >
+              <img style={{ height: "55px" }} src={slider10} alt="skills" />
             </div>
           </div>
         </Slider>

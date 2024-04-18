@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="col-md-12 pl-md-12">
           <ul className="site-contact-details row">
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase" style={{ color: "#60e5ab" }}>
+              <div className="text-uppercase" style={{ color: "#136870" }}>
                 Email
               </div>
               <div
@@ -33,7 +33,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase" style={{ color: "#60e5ab" }}>
+              <div className="text-uppercase" style={{ color: "#136870" }}>
                 Phone
               </div>
               <div
@@ -46,7 +46,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase" style={{ color: "#60e5ab" }}>
+              <div className="text-uppercase" style={{ color: "#136870" }}>
                 Address
               </div>
               <div

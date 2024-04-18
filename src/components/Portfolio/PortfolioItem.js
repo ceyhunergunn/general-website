@@ -1,10 +1,13 @@
 import React from "react";
-import ReactCompareImage from "react-compare-image";
+// import ReactCompareImage from "react-compare-image";
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import bootstrap from "../../assets/bootstrap.png";
+import js from "../../assets/js.png";
+import react from "../../assets/react.png";
+import git from "../../assets/git.png";
 
-const PortfolioItem = ({ logo, img1, img2, name, link, isLink = false }) => {
-  const style = {
-    borderRadius: "24px",
-  };
+const PortfolioItem = ({ logo, img, name, link, isLink = false }) => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-12 p-3 mx-auto">
       <div className="d-flex align-items-center justify-content-center mb-3">
@@ -40,16 +43,16 @@ const PortfolioItem = ({ logo, img1, img2, name, link, isLink = false }) => {
           </div>
         )}
       </div>
-      <div style={{ width: "100%" }} className="mx-auto">
-        <ReactCompareImage
-          leftImage={img1}
-          rightImage={img2}
-          leftImageLabel="Figma Design"
-          rightImageLabel="Developed Page"
-          sliderLineColor="#60e5ab"
-          leftImageCss={style}
-          rightImageCss={style}
+      <div className="mx-auto">
+        <img
+          style={{ width: "100%", borderRadius: "24px" }}
+          className="my-1"
+          src={img}
+          alt="img"
         />
+      </div>
+      <div className="d-flex align-items-center justify-content-center">
+        <img style={{ height: "55px" }} src={js} alt="skills" />
       </div>
     </div>
   );

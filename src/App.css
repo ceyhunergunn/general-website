@@ -10,8 +10,8 @@ body {
   color: white;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.2)
     ),
     url("assets/bg-portfolio.webp");
 
@@ -40,7 +40,7 @@ body {
 
 .navbar-item,
 .navbar-item > a {
-  color: #60e5ab;
+  color: #136870;
   font-size: 22px;
   cursor: pointer;
   text-decoration: none;
@@ -50,17 +50,17 @@ body {
 .navbar-item > a:hover {
   transform: scale(1.1);
   transition: 0.2s linear;
-  color: #60e5ab;
+  color: #136870;
 }
 
 .navbar-item-container:hover .navbar-item.navbar-item > a:not(:hover) {
   /* filter: brightness(0.5); */
-  color: rgba(96, 229, 171, 0.5);
+  color: rgba(19, 101, 111, 0.5);
   transition: 0.2s linear;
 }
 
 .navbar-item-container:not(:hover) .navbar-item.navbar-item > a:not(:hover) {
-  color: #60e5ab;
+  color: #136870;
   font-size: 22px;
   cursor: pointer;
   transition: 0.2s linear;
@@ -73,6 +73,13 @@ body {
 /* SECTION */
 
 /* HERO */
+
+.char-bg {
+  background: url("assets/character/skecth.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* Cursor */
 .txt {
@@ -134,7 +141,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 10px !important;
-  background-color: #60e5ab;
+  background-color: #136870;
   border-radius: 8px;
   width: 120px;
   height: 30px;
@@ -147,7 +154,7 @@ body {
 .open-btn {
   position: relative;
   right: -35px;
-  background-color: #60e5ab;
+  background-color: #136870;
   border-radius: 12px;
   width: 40px;
   height: 40px;
@@ -188,7 +195,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 60px;
-  background: #60e5ab;
+  background: #136870;
   position: relative;
   border-radius: 50%;
   font-size: 22px;
