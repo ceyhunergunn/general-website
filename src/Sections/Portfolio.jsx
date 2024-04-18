@@ -26,14 +26,14 @@ import menu from "../assets/menu.png";
 import konut from "../assets/konut.png";
 import rtls from "../assets/rtls.png";
 import restaurant from "../assets/restaurant.png";
-import restaurant2 from "../assets/restaurant2.png";
-import allarmia2 from "../assets/profile2.png";
+// import restaurant2 from "../assets/restaurant2.png";
+// import allarmia2 from "../assets/profile2.png";
 // import rtls2 from "../assets/rtls2.png";
 // import device2 from "../assets/device2.png";
 // import konut2 from "../assets/konut2.png";
 // import guardmon2 from "../assets/guardmon2.png";
-import menu2 from "../assets/menu2.png";
-import PortfolioItem from "../components/Portfolio/PortfolioItem";
+// import menu2 from "../assets/menu2.png";
+// import PortfolioItem from "../components/Portfolio/PortfolioItem";
 const Portfolio = () => {
   const [project, setProject] = useState({ name: "", img: "", desc: "" });
   const [showDetailModal, setShowDetailModal] = useState(false);
