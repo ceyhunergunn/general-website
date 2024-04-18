@@ -4,35 +4,39 @@ import Carousel from "react-bootstrap/Carousel";
 import x from "../assets/x.png";
 
 // import allarmia from "../assets/allarmia.png";
-import network from "../assets/network.png";
+import network from "../assets/portfolio/network.png";
 import network1 from "../assets/portfolio/portfolio-details-19.png";
 import network2 from "../assets/portfolio/portfolio-details-20.png";
 import network3 from "../assets/portfolio/portfolio-details-21.png";
 
+import konut from "../assets/portfolio/konut.png";
 import konut1 from "../assets/portfolio/portfolio-details-13.png";
 import konut2 from "../assets/portfolio/portfolio-details-14.png";
 import konut3 from "../assets/portfolio/portfolio-details-15.png";
 
+import rtls from "../assets/portfolio/rtls.png";
 import rtls1 from "../assets/portfolio/portfolio-details-16.png";
 import rtls2 from "../assets/portfolio/portfolio-details-17.png";
 import rtls3 from "../assets/portfolio/portfolio-details-18.png";
 
+import device from "../assets/portfolio/device.png";
 import device1 from "../assets/portfolio/device1.png";
 import device2 from "../assets/portfolio/device2.png";
 
-import device from "../assets/device.png";
+import menu from "../assets/portfolio/menu.png";
+import menu1 from "../assets/portfolio/menu1.png";
+
+import restaurant from "../assets/portfolio/restaurant.png";
+import restaurant1 from "../assets/portfolio/restaurant1.png";
+import restaurant2 from "../assets/portfolio/restaurant2.png";
+import restaurant3 from "../assets/portfolio/restaurant3.png";
 // import guardmon from "../assets/guardmon.png";
-import menu from "../assets/menu.png";
-import konut from "../assets/konut.png";
-import rtls from "../assets/rtls.png";
-import restaurant from "../assets/restaurant.png";
 // import restaurant2 from "../assets/restaurant2.png";
 // import allarmia2 from "../assets/profile2.png";
 // import rtls2 from "../assets/rtls2.png";
 // import device2 from "../assets/device2.png";
 // import konut2 from "../assets/konut2.png";
 // import guardmon2 from "../assets/guardmon2.png";
-// import menu2 from "../assets/menu2.png";
 // import PortfolioItem from "../components/Portfolio/PortfolioItem";
 const Portfolio = () => {
   const [project, setProject] = useState({ name: "", img: "", desc: "" });
@@ -113,7 +117,7 @@ const Portfolio = () => {
                   img2: device2,
                   img3: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
-                  desc: "In this project, our goal was to create a software system that could track domains in networks, monitor SSL certificates, and manage mailboxes. With the use of playbooks within the system, users could define their own workflows, specifying when and from which triggers they would receive alerts. In this project, I converted the entire front-end process into code in accordance with the developed design.",
+                  desc: "Guardmon is an application that facilitates the monitoring and management of all components in the power chains of data centers. Its aim is to increase the efficiency of data center businesses and ensure uninterrupted operation by providing strong visibility to users. In this project, I developed frontend part of this project.",
                 });
                 handleShowDetailModal();
               }}
@@ -147,12 +151,12 @@ const Portfolio = () => {
               }}
               onClick={() => {
                 setProject({
-                  name: "Network App.",
-                  img1: network1,
-                  img2: network2,
-                  img3: network3,
+                  name: "Menu Application",
+                  img1: menu1,
+                  img2: "",
+                  img3: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
-                  desc: "In this project, our goal was to create a software system that could track domains in networks, monitor SSL certificates, and manage mailboxes. With the use of playbooks within the system, users could define their own workflows, specifying when and from which triggers they would receive alerts. In this project, I converted the entire front-end process into code in accordance with the developed design.",
+                  desc: "This project helps people order food and look at menus on a website using a QR code. You scan the code, see the menu, and pick what you want to eat. I did all the design and coding for how the website looks. I developed frontend part of this project",
                 });
                 handleShowDetailModal();
               }}
@@ -186,12 +190,12 @@ const Portfolio = () => {
               }}
               onClick={() => {
                 setProject({
-                  name: "Network App.",
-                  img1: network1,
-                  img2: network2,
-                  img3: network3,
+                  name: "Restaurant App.",
+                  img1: restaurant1,
+                  img2: restaurant2,
+                  img3: restaurant3,
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
-                  desc: "In this project, our goal was to create a software system that could track domains in networks, monitor SSL certificates, and manage mailboxes. With the use of playbooks within the system, users could define their own workflows, specifying when and from which triggers they would receive alerts. In this project, I converted the entire front-end process into code in accordance with the developed design.",
+                  desc: "In this project, I developed a website that showcases all the features and details of a restaurant. The website provides comprehensive information about the restaurant, ranging from its menu to its location, opening hours, and special events. I handled both the design and coding aspects of this website.",
                 });
                 handleShowDetailModal();
               }}
@@ -269,7 +273,7 @@ const Portfolio = () => {
                   img2: konut2,
                   img3: konut3,
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
-                  desc: "Team was to develop a house tracking application for a community housing project consisting of several housing estates. The application allows users to create and track payments, monitor announcements, create requests and reports for issues, and includes a payment system. In this project, I converted the entire front-end process into code in accordance with the developed design.",
+                  desc: "Team was to develop a house tracking application for a community housing project consisting of several housing estates. The application allows users to create and track payments, monitor announcements, create requests and reports for issues, and includes a payment system. In this project, I developed frontend part of this project.",
                 });
                 handleShowDetailModal();
               }}
