@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import avatar from "../../assets/character/ceyhun-hero.png";
-import charbg from "../../assets/character/skecth.png";
+// import charbg from "../../assets/character/skecth.png";
 
 const TypeWriter = ({ words, wait = 3000 }) => {
   const [txt, setTxt] = useState("");
