@@ -12,7 +12,11 @@ const ResumeButton = () => {
   };
   return (
     <div className="resume-btn text-center text-dark d-flex align-items-center justify-content-between">
-      <a onClick={handleDownload} href="#a">
+      <a
+        onClick={handleDownload}
+        href="/"
+        style={{ textDecoration: "none !important", color: "black" }}
+      >
         <span className="me-2">Resume</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
