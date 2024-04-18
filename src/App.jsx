@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Main from "./Sections/Main";
 import Portfolio from "./Sections/Portfolio";
+import Skills from "./Sections/Skills";
 import Footer from "./Sections/Footer";
 import Contact from "./Sections/Contact";
 import ResumeButton from "./components/Button/ResumeButton";
@@ -18,6 +19,7 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Main />
+      <Skills />
       <Portfolio />
       <div className="last-section">
         <Contact />

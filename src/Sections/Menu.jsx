@@ -22,6 +22,11 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         </a>
       </div>
       <div className="text-center navbar-item navbar-item-toggle my-3">
+        <a href="#section-skills" onClick={() => setMenuOpen(false)}>
+          Skills
+        </a>
+      </div>
+      <div className="text-center navbar-item navbar-item-toggle my-3">
         <a href="#section-portfolio" onClick={() => setMenuOpen(false)}>
           Portfolio
         </a>

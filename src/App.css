@@ -135,6 +135,58 @@ body {
   background-size: cover; */
 }
 
+.portfolio-card-top {
+  padding: 1.5rem;
+  border: 1px solid rgba(19, 104, 112, 0.5);
+  background: transparent;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-card-bottom {
+  padding: 1rem;
+  background-color: rgba(19, 104, 112, 0.5);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skills */
+
+.section-skills {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.skills-card-top {
+  padding: 1.5rem;
+  background-color: rgba(19, 104, 112, 0.5);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-card-bottom {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid rgba(19, 104, 112, 0.5);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* RESUME BUTTON */
 
 .resume-btn {
@@ -263,4 +315,10 @@ body {
   transform: scale(1);
   opacity: 1;
   transition: scale 550ms linear, opacity 250ms linear;
+}
+
+/* MODAL */
+.content-bg {
+  background-color: rgba(19, 104, 112, 0.5);
+  backdrop-filter: blur(10px);
 }

@@ -16,6 +16,11 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                 </a>
               </div>
               <div className="me-5 navbar-item">
+                <a href="#section-skills" onClick={() => setMenuOpen(false)}>
+                  Skills
+                </a>
+              </div>
+              <div className="me-5 navbar-item">
                 <a href="#section-portfolio" onClick={() => setMenuOpen(false)}>
                   Portfolio
                 </a>
@@ -36,7 +41,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           >
             <Hamburger
               direction="right"
-              color="#60e5ab"
+              color="#136870"
               toggled={menuOpen}
               onToggle={(toggle) => {
                 setMenuOpen(toggle);
