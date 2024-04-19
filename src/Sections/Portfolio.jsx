@@ -423,7 +423,7 @@ const Portfolio = () => {
                 cursor: "pointer",
               }}
             >
-              Kapat
+              Close
             </div>
           </div>
         </Modal.Body>
