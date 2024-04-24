@@ -1,1 +1,1 @@
-Ceyhun Ergğn's personal website 2024
+Ceyhun Ergün's personal website 2024
