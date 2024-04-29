@@ -8,6 +8,7 @@ import slider6 from "../assets/skills/js.png";
 import slider7 from "../assets/skills/react.png";
 import slider8 from "../assets/skills/git.png";
 import slider10 from "../assets/skills/ts.png";
+import SkillItem from "../components/Skills/SkillItem";
 
 const Skills = () => {
   return (
@@ -24,60 +25,40 @@ const Skills = () => {
         </div>
       </div>
       <div className="row w-100 mx-auto">
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider1} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">HTML</div>
-        </div>
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider2} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">CSS</div>
-        </div>{" "}
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider3} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">Bootstrap</div>
-        </div>{" "}
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider4} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">Sass</div>
-        </div>{" "}
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider5} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">Less</div>
-        </div>{" "}
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider6} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">JavaScript</div>
-        </div>
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider10} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">TypeScript</div>
-        </div>
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider7} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">React</div>
-        </div>{" "}
-        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
-          <div className="w-75 mx-auto skills-card-top">
-            <img style={{ height: "80px" }} src={slider8} alt="skills" />
-          </div>
-          <div className="w-75 mx-auto skills-card-bottom">Git</div>
-        </div>{" "}
+        <SkillItem img={slider1} name={"HTML"} fromid={"html"} toid={"css"} />
+        <SkillItem
+          img={slider2}
+          name={"CSS"}
+          fromid={"css"}
+          toid={"bootstrap"}
+        />
+        <SkillItem
+          img={slider3}
+          name={"Bootstrap"}
+          fromid={"bootstrap"}
+          toid={"sass"}
+        />
+        <SkillItem img={slider4} name={"Sass"} fromid={"sass"} toid={"less"} />
+        <SkillItem
+          img={slider5}
+          name={"Less"}
+          fromid={"less"}
+          toid={"javascript"}
+        />
+        <SkillItem
+          img={slider6}
+          name={"JavaScript"}
+          fromid={"javascript"}
+          toid={"typescript"}
+        />
+        <SkillItem
+          img={slider10}
+          name={"TypeScript"}
+          fromid={"typescript"}
+          toid={"react"}
+        />
+        <SkillItem img={slider7} name={"React"} fromid={"react"} toid={"git"} />
+        <SkillItem img={slider8} name={"Git"} fromid={"git"} toid={""} />
       </div>
     </section>
   );
