@@ -33,10 +33,24 @@ const Skills = () => {
           toid={"bootstrap"}
         />
         <SkillItem
+          img={slider6}
+          name={"JavaScript"}
+          fromid={"javascript"}
+          toid={"typescript"}
+        />
+
+        <SkillItem
           img={slider3}
           name={"Bootstrap"}
           fromid={"bootstrap"}
           toid={"sass"}
+        />
+        <SkillItem img={slider7} name={"React"} fromid={"react"} toid={"git"} />
+        <SkillItem
+          img={slider10}
+          name={"TypeScript"}
+          fromid={"typescript"}
+          toid={"react"}
         />
         <SkillItem img={slider4} name={"Sass"} fromid={"sass"} toid={"less"} />
         <SkillItem
@@ -45,19 +59,6 @@ const Skills = () => {
           fromid={"less"}
           toid={"javascript"}
         />
-        <SkillItem
-          img={slider6}
-          name={"JavaScript"}
-          fromid={"javascript"}
-          toid={"typescript"}
-        />
-        <SkillItem
-          img={slider10}
-          name={"TypeScript"}
-          fromid={"typescript"}
-          toid={"react"}
-        />
-        <SkillItem img={slider7} name={"React"} fromid={"react"} toid={"git"} />
         <SkillItem img={slider8} name={"Git"} fromid={"git"} toid={""} />
       </div>
     </section>
