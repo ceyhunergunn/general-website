@@ -3,7 +3,6 @@ import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 import x from "../assets/x.png";
 
-// import allarmia from "../assets/allarmia.png";
 import network from "../assets/portfolio/network.png";
 import network1 from "../assets/portfolio/portfolio-details-19.png";
 import network2 from "../assets/portfolio/portfolio-details-20.png";
@@ -30,14 +29,14 @@ import restaurant from "../assets/portfolio/restaurant.png";
 import restaurant1 from "../assets/portfolio/restaurant1.png";
 import restaurant2 from "../assets/portfolio/restaurant2.png";
 import restaurant3 from "../assets/portfolio/restaurant3.png";
-// import guardmon from "../assets/guardmon.png";
-// import restaurant2 from "../assets/restaurant2.png";
-// import allarmia2 from "../assets/profile2.png";
-// import rtls2 from "../assets/rtls2.png";
-// import device2 from "../assets/device2.png";
-// import konut2 from "../assets/konut2.png";
-// import guardmon2 from "../assets/guardmon2.png";
-// import PortfolioItem from "../components/Portfolio/PortfolioItem";
+
+import bank from "../assets/portfolio/bank.png";
+import bank5 from "../assets/portfolio/bank1.png";
+import bank1 from "../assets/portfolio/bank2.png";
+import bank2 from "../assets/portfolio/bank3.png";
+import bank3 from "../assets/portfolio/bank4.png";
+import bank4 from "../assets/portfolio/bank5.png";
+
 const Portfolio = () => {
   const [project, setProject] = useState({ name: "", img: "", desc: "" });
   const [showDetailModal, setShowDetailModal] = useState(false);
@@ -77,6 +76,9 @@ const Portfolio = () => {
                   img1: network1,
                   img2: network2,
                   img3: network3,
+                  img4: "",
+                  img5: "",
+                  link: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
                   desc: "In this project, our goal was to create a software system that could track domains in networks, monitor SSL certificates, and manage mailboxes. With the use of playbooks within the system, users could define their own workflows, specifying when and from which triggers they would receive alerts. In this project, I converted the entire front-end process into code in accordance with the developed design.",
                 });
@@ -116,6 +118,9 @@ const Portfolio = () => {
                   img1: device1,
                   img2: device2,
                   img3: "",
+                  img4: "",
+                  img5: "",
+                  link: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
                   desc: "Guardmon is an application that facilitates the monitoring and management of all components in the power chains of data centers. Its aim is to increase the efficiency of data center businesses and ensure uninterrupted operation by providing strong visibility to users. In this project, I developed frontend part of this project.",
                 });
@@ -155,6 +160,9 @@ const Portfolio = () => {
                   img1: menu1,
                   img2: "",
                   img3: "",
+                  img4: "",
+                  img5: "",
+                  link: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
                   desc: "This project helps people order food and look at menus on a website using a QR code. You scan the code, see the menu, and pick what you want to eat. I did all the design and coding for how the website looks. I developed frontend part of this project",
                 });
@@ -194,6 +202,9 @@ const Portfolio = () => {
                   img1: restaurant1,
                   img2: restaurant2,
                   img3: restaurant3,
+                  img4: "",
+                  img5: "",
+                  link: "https://restaurant.hicci.com.tr/",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
                   desc: "In this project, I developed a website that showcases all the features and details of a restaurant. The website provides comprehensive information about the restaurant, ranging from its menu to its location, opening hours, and special events. I handled both the design and coding aspects of this website.",
                 });
@@ -229,10 +240,55 @@ const Portfolio = () => {
               }}
               onClick={() => {
                 setProject({
-                  name: "Real-Time Locating Software",
+                  name: "Modern Bank Application",
+                  img1: bank1,
+                  img2: bank2,
+                  img3: bank3,
+                  img4: bank4,
+                  img5: bank5,
+                  link: "https://modern-bank-hicci.netlify.app/",
+                  techs: "HTML, CSS, Tailwind, JavaScript, React",
+                  desc: "In this project, I developed a website that showcases all the features and details of a bank. I handled both the design and coding aspects of this website.",
+                });
+                handleShowDetailModal();
+              }}
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="rgba(19, 104, 112,1)"
+              class="bi bi-info-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+            </svg>
+            <img style={{ height: "80px" }} src={bank} alt="portfolio" />
+          </div>
+          <div className="w-75 h-50 mx-auto portfolio-card-bottom">
+            Modern Bank App.
+          </div>
+        </div>{" "}
+        <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
+          <div
+            className="w-75 h-50 mx-auto portfolio-card-top"
+            style={{ position: "relative" }}
+          >
+            <svg
+              style={{
+                position: "absolute",
+                top: "10",
+                right: "10",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                setProject({
+                  name: "Real-Time Locating System",
                   img1: rtls1,
                   img2: rtls2,
                   img3: rtls3,
+                  img4: "",
+                  img5: "",
+                  link: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
                   desc: "In this project, we aimed to develop a real-time location tracking system that could be used in factories, shipyards, and large-scale workplaces. Additionally, we incorporated functions such as personnel tracking, machinery tracking, and work hour monitoring into our software. In this project, I converted the entire front-end process into code in accordance with the developed design.",
                 });
@@ -251,7 +307,7 @@ const Portfolio = () => {
             <img style={{ height: "80px" }} src={rtls} alt="portfolio" />
           </div>
           <div className="w-75 h-50 mx-auto portfolio-card-bottom">
-            Real Time Location Software
+            Real Time Location System
           </div>
         </div>{" "}
         <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
@@ -272,6 +328,9 @@ const Portfolio = () => {
                   img1: konut1,
                   img2: konut2,
                   img3: konut3,
+                  img4: "",
+                  img5: "",
+                  link: "",
                   techs: "HTML, CSS, Bootstrap, JavaScript, React",
                   desc: "Team was to develop a house tracking application for a community housing project consisting of several housing estates. The application allows users to create and track payments, monitor announcements, create requests and reports for issues, and includes a payment system. In this project, I developed frontend part of this project.",
                 });
@@ -294,50 +353,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      {/* <div className="row w-100 mx-auto">
-        <PortfolioItem
-          logo={network}
-          img={allarmia2}
-          name={"Network App."}
-          link={"https://allarmia.com"}
-          isLink={true}
-        />
-        <PortfolioItem
-          logo={device}
-          img={device2}
-          name={"Device Management App."}
-          link={"https://guardmon.com"}
-          isLink={true}
-        />
-        <PortfolioItem
-          logo={menu}
-          img={menu2}
-          name={"Menu Application"}
-          link={""}
-          isLink={false}
-        />
-        <PortfolioItem
-          logo={restaurant}
-          img={restaurant2}
-          name={"Restaurant App."}
-          link={"https://restaurant.hicci.com.tr"}
-          isLink={true}
-        />
-        <PortfolioItem
-          logo={rtls}
-          img={rtls2}
-          name={"Real Time Location System"}
-          link={""}
-          isLink={false}
-        />
-        <PortfolioItem
-          logo={konut}
-          img={konut2}
-          name={"House Tracking System"}
-          link={""}
-          isLink={false}
-        />
-      </div> */}
 
       {/* Project Modal */}
       <Modal
@@ -359,10 +374,34 @@ const Portfolio = () => {
             />
           </div>
           <div
-            className="text-color2 text-start mb-3"
+            className="text-color2 text-start mb-3 d-flex"
             style={{ fontSize: "26px" }}
           >
             {project.name}
+            {project.link !== "" ? (
+              <div
+                className="ms-3 link-btn"
+                onClick={() => window.open(project.link)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-up-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                  />
+                </svg>
+              </div>
+            ) : null}
           </div>
           <div
             className="text-color2 text-start mb-3"
@@ -398,6 +437,26 @@ const Portfolio = () => {
                   <img
                     style={{ borderRadius: "24px" }}
                     src={project.img3}
+                    className="w-100"
+                    alt="detail"
+                  />
+                </Carousel.Item>
+              ) : null}
+              {project.img4 !== "" ? (
+                <Carousel.Item style={{ borderRadius: "24px" }}>
+                  <img
+                    style={{ borderRadius: "24px" }}
+                    src={project.img4}
+                    className="w-100"
+                    alt="detail"
+                  />
+                </Carousel.Item>
+              ) : null}
+              {project.img5 !== "" ? (
+                <Carousel.Item style={{ borderRadius: "24px" }}>
+                  <img
+                    style={{ borderRadius: "24px" }}
+                    src={project.img5}
                     className="w-100"
                     alt="detail"
                   />
