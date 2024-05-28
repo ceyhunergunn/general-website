@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="site-footer" data-aos="zoom-in">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="site-footer"
+      data-aos="zoom-in"
+    >
       <div className="container">
         <div className="row mb-3">
           <div className="col-md-12 text-center">
@@ -81,7 +87,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

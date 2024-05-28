@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import network from "../assets/portfolio/network.png";
 import network1 from "../assets/portfolio/portfolio-details-19.png";
@@ -45,7 +46,9 @@ import PortfolioItem from "../components/Portfolio/PortfolioItem";
 
 const Portfolio = () => {
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className="section-portfolio d-flex align-items-center justify-content-center flex-column"
       id="section-portfolio"
     >
@@ -194,7 +197,7 @@ const Portfolio = () => {
           }
         />
       </div>
-    </section>
+    </motion.div>
   );
 };
 

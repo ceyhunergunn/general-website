@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import avatar from "../../assets/character/ceyhun-hero.png";
-// import charbg from "../../assets/character/skecth.png";
+import { motion } from "framer-motion";
 
 const TypeWriter = ({ words, wait = 3000 }) => {
   const [txt, setTxt] = useState("");
@@ -55,7 +55,11 @@ const Hero = () => {
   return (
     <div className="h-100 w-100 d-flex align-items-center py-5 hero-bg">
       <div className="row w-100 intro-text align-items-center justify-content-center mx-auto">
-        <div className="col-lg-6 col-md-6 col-sm-12 p-5 d-flex align-items-center justify-content-center">
+        <motion.div
+          initial={{ x: -500 }}
+          animate={{ x: 0 }}
+          className="col-lg-6 col-md-6 col-sm-12 p-5 d-flex align-items-center justify-content-center"
+        >
           <h1
             className="text-center main-text w-100"
             style={{
@@ -69,8 +73,12 @@ const Hero = () => {
             <br />
             <TypeWriter words={words} wait={wait} />
           </h1>
-        </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center char-bg">
+        </motion.div>
+        <motion.div
+          initial={{ x: +500 }}
+          animate={{ x: 0 }}
+          className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center char-bg"
+        >
           {/* <img src={charbg} alt="avatar" className="w-100" /> */}
           <img
             src={avatar}
@@ -78,7 +86,7 @@ const Hero = () => {
             className="w-100"
             style={{ minHeight: "300px" }}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

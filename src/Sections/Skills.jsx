@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import slider1 from "../assets/skills/html.png";
 import slider2 from "../assets/skills/css.png";
 import slider3 from "../assets/skills/bootstrap.png";
@@ -13,7 +15,9 @@ import SkillItem from "../components/Skills/SkillItem";
 
 const Skills = () => {
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className="section-skills d-flex align-items-center justify-content-center flex-column"
       id="section-skills"
     >
@@ -69,7 +73,7 @@ const Skills = () => {
         />
         <SkillItem img={slider8} name={"Git"} fromid={"git"} toid={""} />
       </div>
-    </section>
+    </motion.div>
   );
 };
 

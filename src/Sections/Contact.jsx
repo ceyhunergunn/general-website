@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section className="section-contact" id="section-contact">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="section-contact"
+      id="section-contact"
+    >
       <div className="row w-100 mx-auto">
         <div className="col-md-12">
           {" "}
@@ -59,7 +65,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 
