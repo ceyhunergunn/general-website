@@ -8,6 +8,7 @@ import slider6 from "../assets/skills/js.png";
 import slider7 from "../assets/skills/react.png";
 import slider8 from "../assets/skills/git.png";
 import slider10 from "../assets/skills/ts.png";
+import slider11 from "../assets/skills/tailwind.png";
 import SkillItem from "../components/Skills/SkillItem";
 
 const Skills = () => {
@@ -40,8 +41,8 @@ const Skills = () => {
         />
 
         <SkillItem
-          img={slider3}
-          name={"Bootstrap"}
+          img={slider11}
+          name={"Tailwind"}
           fromid={"bootstrap"}
           toid={"sass"}
         />
@@ -51,6 +52,13 @@ const Skills = () => {
           name={"TypeScript"}
           fromid={"typescript"}
           toid={"react"}
+        />
+
+        <SkillItem
+          img={slider3}
+          name={"Bootstrap"}
+          fromid={"bootstrap"}
+          toid={"sass"}
         />
         <SkillItem img={slider4} name={"Sass"} fromid={"sass"} toid={"less"} />
         <SkillItem

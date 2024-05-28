@@ -172,6 +172,7 @@ body {
 }
 
 .skills-card-top {
+  min-height: 140px;
   padding: 1.5rem;
   background-color: rgba(19, 104, 112, 0.5);
   border-top-left-radius: 24px;
