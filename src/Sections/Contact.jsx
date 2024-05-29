@@ -29,7 +29,7 @@ const Contact = () => {
       .send(
         "service_i1efp5p",
         "template_uaa4vqx",
-        { to_name, from_name, from_email, message, reply_to: from_email },
+        { to_name, from_name, from_email, message },
         {
           publicKey: "eGXBH890gGxZhml10",
         }
