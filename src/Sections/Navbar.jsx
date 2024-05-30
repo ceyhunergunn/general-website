@@ -26,7 +26,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                 </a>
               </div>
               <div className="me-5 navbar-item">
-                <a href="#section-contact" onClick={() => setMenuOpen(false)}>
+                <a href="#last-section" onClick={() => setMenuOpen(false)}>
                   Contact
                 </a>
               </div>

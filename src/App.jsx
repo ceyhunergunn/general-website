@@ -21,7 +21,7 @@ function App() {
       <Main />
       <Skills />
       <Portfolio />
-      <div className="last-section">
+      <div id="last-section" className="last-section">
         <Contact />
         <Footer />
       </div>

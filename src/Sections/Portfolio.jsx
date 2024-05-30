@@ -44,6 +44,13 @@ import movie1 from "../assets/portfolio/movie1.png";
 import movie2 from "../assets/portfolio/movie2.png";
 import PortfolioItem from "../components/Portfolio/PortfolioItem";
 
+import social from "../assets/portfolio/social.png";
+import social1 from "../assets/portfolio/social1.png";
+import social2 from "../assets/portfolio/social2.png";
+import social3 from "../assets/portfolio/social3.png";
+import social4 from "../assets/portfolio/social4.png";
+import social5 from "../assets/portfolio/social5.png";
+
 const Portfolio = () => {
   return (
     <motion.div
@@ -131,7 +138,22 @@ const Portfolio = () => {
           name={"Modern Bank Application"}
           projectName={"Modern Bank Application"}
           link={"https://modern-bank-hicci.netlify.app/"}
-          techs={"HTML, CSS, TailwindCSS, JavaScript, React"}
+          techs={"HTML, CSS, Tailwind, JavaScript, React"}
+          desc={
+            "In this project, I developed a website that showcases all the features and details of a social media platform. I handled both the design and coding aspects of this website."
+          }
+        />
+        <PortfolioItem
+          logo={social}
+          img1={social1}
+          img2={social2}
+          img3={social3}
+          img4={social4}
+          img5={social5}
+          name={"Social Media Application"}
+          projectName={"Social Media Application"}
+          link={""}
+          techs={"HTML, CSS, Tailwind, JavaScript, TypeScript, React"}
           desc={
             "In this project, I developed a website that showcases all the features and details of a bank. I handled both the design and coding aspects of this website."
           }
@@ -176,7 +198,7 @@ const Portfolio = () => {
           name={"Dashboard App."}
           projectName={"Dashboard Application"}
           link={"https://dashboard-ui.hicci.com.tr/"}
-          techs={"HTML, CSS, TailwindCSS, JavaScript, React"}
+          techs={"HTML, CSS, Tailwind, JavaScript, React"}
           desc={
             "In this project, I developed a website that showcases all the features and details of a company. I handled both the design and coding aspects of this website."
           }
