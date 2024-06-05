@@ -8,7 +8,17 @@ const ResumeButton = () => {
     link.href = fileUrl;
     link.download = "Ceyhun_Ergun_CV.pdf";
     link.target = "_blank";
-    link.click();
+    if (
+      navigator.userAgent.includes("Safari") &&
+      !navigator.userAgent.includes("Chrome")
+    ) {
+      var newWindow = window.open(fileUrl, "_blank");
+      if (newWindow) {
+        newWindow.focus();
+      }
+    } else {
+      link.click();
+    }
   };
   return (
     <div className="resume-btn text-center text-dark d-flex align-items-center justify-content-between">
