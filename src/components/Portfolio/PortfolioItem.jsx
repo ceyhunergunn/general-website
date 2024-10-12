@@ -25,8 +25,8 @@ const PortfolioItem = ({
     <>
       <div className="col-lg-4 mx-auto col-md-6 col-sm-6 p-3">
         <div
-          className="w-75 h-50 mx-auto portfolio-card-top"
-          style={{ position: "relative" }}
+          className="w-100 w-md-75 w-lg-75 mx-auto mx-auto portfolio-card-top"
+          style={{ position: "relative", height: "100px" }}
         >
           <svg
             style={{
@@ -61,7 +61,7 @@ const PortfolioItem = ({
           </svg>
           <img style={{ height: "80px" }} src={logo} alt={name} />
         </div>
-        <div className="w-75 h-50 mx-auto portfolio-card-bottom">
+        <div className="w-100 w-md-75 w-lg-75 mx-auto h-50 mx-auto portfolio-card-bottom">
           {projectName}
         </div>
       </div>

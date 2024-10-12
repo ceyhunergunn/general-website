@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import Hamburger from "hamburger-react";
+import { ThemeButton } from "../components/Button/ThemeButton";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -10,6 +11,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div>
           {menuOpen ? null : (
             <div className="navbar-item-container d-none d-md-flex d-lg-flex d-xl-flex align-items-center">
+              <div className="me-5 navbar-item">
+                <ThemeButton />
+              </div>
               <div className="me-5 navbar-item">
                 <a href="#section-hero" onClick={() => setMenuOpen(false)}>
                   Home
@@ -35,10 +39,11 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           <div
             className={
               menuOpen
-                ? "d-flex"
-                : "d-flex d-md-none d-lg-none d-xl-none align-items-center"
+                ? "d-flex gap-2"
+                : "d-flex gap-2 d-md-none d-lg-none d-xl-none align-items-center"
             }
           >
+            <ThemeButton />
             <Hamburger
               direction="right"
               color="#136870"

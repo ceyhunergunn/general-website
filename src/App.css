@@ -2,6 +2,21 @@
 /* font-family: "Caveat", cursive; */
 /* font-family: "Urbanist", sans-serif; */
 /* font-family: "Poppins", sans-serif; */
+:root {
+  --sketch-image: url("assets/character/skecth.png");
+  --primary-color: #136870;
+  --secondary-color: #0d0c22;
+  --tertiary-color: #f3f3f4;
+  --quaternary-color: #9e9ea7;
+  --quinary-color: #ffe4f8;
+  --primary-text-color: #fff;
+  --bg-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  --bg-image: url("assets/bg-portfolio.webp");
+}
 
 html {
   background-color: #0b0a0a;
@@ -11,13 +26,8 @@ body {
   margin: 0;
   font-family: "Urbanist", sans-serif;
 
-  color: white;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("assets/bg-portfolio.webp");
+  color: var(--primary-text-color);
+  background-image: var(--bg-gradient), var(--bg-image);
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,7 +55,7 @@ body {
 
 .navbar-item,
 .navbar-item > a {
-  color: #136870;
+  color: var(--primary-color);
   font-size: 22px;
   cursor: pointer;
   text-decoration: none;
@@ -55,7 +65,7 @@ body {
 .navbar-item > a:hover {
   transform: scale(1.1);
   transition: 0.2s linear;
-  color: #136870;
+  color: var(--primary-color);
 }
 
 .navbar-item-container:hover .navbar-item.navbar-item > a:not(:hover) {
@@ -65,7 +75,7 @@ body {
 }
 
 .navbar-item-container:not(:hover) .navbar-item.navbar-item > a:not(:hover) {
-  color: #136870;
+  color: var(--primary-color);
   font-size: 22px;
   cursor: pointer;
   transition: 0.2s linear;
@@ -79,8 +89,11 @@ body {
 
 /* HERO */
 
+.hero-text {
+  color: var(--primary-text-color);
+}
 .char-bg {
-  background: url("assets/character/skecth.png");
+  background: var(--sketch-image);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,7 +101,7 @@ body {
 
 /* Cursor */
 .txt {
-  border-right: 0.2rem solid white;
+  border-right: 0.2rem solid var(--primary-text-color);
   padding-right: 0.1rem;
   font-family: "Madimi One", sans-serif;
   font-weight: 100;
@@ -112,13 +125,13 @@ body {
 
 @keyframes blink {
   0% {
-    border-right: 0.2rem solid white;
+    border-right: 0.2rem solid var(-hero-text-color);
   }
   50% {
     border-right: 0.2rem solid transparent;
   }
   100% {
-    border-right: 0.2rem solid white;
+    border-right: 0.2rem solid var(-hero-text-color);
   }
 }
 
@@ -199,7 +212,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 10px !important;
-  background-color: #136870;
+  background-color: var(--primary-color);
   border-radius: 8px;
   width: 120px;
   height: 30px;
@@ -210,7 +223,7 @@ body {
 }
 
 .link-btn {
-  background-color: #136870;
+  background-color: var(--primary-color);
   width: 40px;
   height: 40px;
   display: flex;
@@ -223,7 +236,7 @@ body {
 .open-btn {
   position: relative;
   right: -35px;
-  background-color: #136870;
+  background-color: var(--primary-color);
   border-radius: 12px;
   width: 40px;
   height: 40px;
@@ -264,7 +277,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 60px;
-  background: #136870;
+  background: var(--primary-color);
   position: relative;
   border-radius: 50%;
   font-size: 22px;
@@ -283,7 +296,7 @@ body {
 /* CONTACT */
 
 .contact-tag {
-  color: #fff;
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 .contact-tag:hover {
@@ -308,7 +321,7 @@ body {
   display: block;
   font-size: 100px;
   text-transform: uppercase;
-  color: #ffe4f8;
+  color: var(--quinary-color);
   padding: 0.5rem 0;
   opacity: 0.25;
   transition: scale 550ms linear, opacity 250ms linear;
@@ -317,7 +330,7 @@ body {
   display: block;
   font-size: 100px;
   text-transform: uppercase;
-  color: #ffe4f8;
+  color: var(--quinary-color);
   padding: 0.5rem 0;
   opacity: 0.15;
 }
@@ -345,14 +358,14 @@ body {
 }
 
 .arrow__path {
-  stroke: #fff;
+  stroke: var(--primary-text-color);
   fill: transparent;
   stroke-dasharray: 10 5;
   stroke-width: 1px;
 }
 
 .arrow__head line {
-  stroke: #fff;
+  stroke: var(--primary-text-color);
   stroke-width: 1px;
   transform: rotate(-90deg);
 }
@@ -365,8 +378,8 @@ body {
   border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
-  background-color: #f3f3f4;
-  color: #0d0c22;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
   transition: 0.3s ease;
 }
 
@@ -378,13 +391,13 @@ body {
   border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
-  background-color: #f3f3f4;
-  color: #0d0c22;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
   transition: 0.3s ease;
 }
 
 .input::placeholder .text-area::placeholder {
-  color: #9e9ea7;
+  color: var(--quaternary-color);
 }
 
 .input:focus,
@@ -393,20 +406,94 @@ input:hover,
 .text-area:hover {
   outline: none;
   border-color: rgba(234, 76, 137, 0.4);
-  background-color: #fff;
+  background-color: var(--primary-text-color);
   box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
 
 .send-btn {
-  background-color: #136870;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
   border-radius: 12px;
   width: 130px;
   border: none;
   height: 50px;
   padding: 0.21rem 0.21rem;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .send-btn:hover {
   background-color: #2d8088;
+}
+
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
 }

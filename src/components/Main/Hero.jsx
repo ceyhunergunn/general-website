@@ -41,8 +41,8 @@ const TypeWriter = ({ words, wait = 3000 }) => {
 
   return (
     <span
-      className="txt"
-      style={{ color: "white", fontWeight: "bold", fontSize: "60px" }}
+      className="txt hero-text"
+      style={{ fontWeight: "bold", fontSize: "60px" }}
     >
       {txt}
     </span>
@@ -61,9 +61,8 @@ const Hero = () => {
           className="col-lg-6 col-md-6 col-sm-12 p-5 d-flex align-items-center justify-content-center"
         >
           <h1
-            className="text-center main-text w-100"
+            className="text-center main-text w-100 hero-text"
             style={{
-              color: "white",
               fontWeight: "bold",
               fontSize: "50px",
               lineHeight: "6rem",
