@@ -9,6 +9,8 @@ const Contact = () => {
   const [from_email, setFrom_email] = useState("");
   const [message, setMessage] = useState("");
 
+  const sendBtn = document.querySelector(".send-btn");
+
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
@@ -25,6 +27,8 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    sendBtn.value = "Sending...";
+    sendBtn.disabled = true;
     emailjs
       .send(
         "service_i1efp5p",
@@ -36,6 +40,8 @@ const Contact = () => {
       )
       .then(
         () => {
+          sendBtn.value = "Send";
+          sendBtn.disabled = false;
           Toast.fire({
             icon: "success",
             title: "Message sent successfully.",
@@ -122,7 +128,7 @@ const Contact = () => {
           </form>
           <ul className="site-contact-details row">
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase contact-text">Email</div>
+              <div className="text-uppercase contact-text">E-mail</div>
               <div
                 className="d-flex align-items-center justify-content-center flex-column"
                 style={{ height: "75px" }}
