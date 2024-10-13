@@ -39,8 +39,8 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           <div
             className={
               menuOpen
-                ? "d-flex gap-2"
-                : "d-flex gap-2 d-md-none d-lg-none d-xl-none align-items-center"
+                ? "d-flex gap-3"
+                : "d-flex gap-3 d-md-none d-lg-none d-xl-none align-items-center"
             }
           >
             <ThemeButton />
