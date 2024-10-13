@@ -15,7 +15,7 @@ import { ThemeContext } from "./Context/ThemeContext";
 import sketch from "./assets/character/sketch.png";
 import sketchLight from "./assets/character/sketch-light.png";
 import bg from "./assets/bg-portfolio.webp";
-import bgLight from "./assets/bg-portfolio-light.jpg";
+import bgLight from "./assets/bg-portfolio-light.webp";
 
 function App() {
   const { theme } = React.useContext(ThemeContext);
