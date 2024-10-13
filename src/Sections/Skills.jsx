@@ -43,21 +43,19 @@ const Skills = () => {
           fromid={"javascript"}
           toid={"typescript"}
         />
-
-        <SkillItem
-          img={slider11}
-          name={"Tailwind"}
-          fromid={"bootstrap"}
-          toid={"sass"}
-        />
-        <SkillItem img={slider7} name={"React"} fromid={"react"} toid={"git"} />
         <SkillItem
           img={slider10}
           name={"TypeScript"}
           fromid={"typescript"}
           toid={"react"}
         />
-
+        <SkillItem img={slider7} name={"React"} fromid={"react"} toid={"git"} />
+        <SkillItem
+          img={slider11}
+          name={"Tailwind"}
+          fromid={"bootstrap"}
+          toid={"sass"}
+        />
         <SkillItem
           img={slider3}
           name={"Bootstrap"}

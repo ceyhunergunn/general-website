@@ -3,7 +3,11 @@ import React, { createContext, useState } from "react";
 export const ThemeContext = createContext();
 
 const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState(true);
+  const isDarkMode =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const [theme, setTheme] = useState(isDarkMode);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 import x from "../../assets/x.png";
+import { ThemeContext } from "../../Context/ThemeContext";
 
 const PortfolioItem = ({
   logo,
@@ -16,6 +17,7 @@ const PortfolioItem = ({
   techs,
   desc,
 }) => {
+  const { theme } = React.useContext(ThemeContext);
   const [project, setProject] = useState({ name: "", img: "", desc: "" });
   const [showDetailModal, setShowDetailModal] = useState(false);
 
@@ -52,7 +54,7 @@ const PortfolioItem = ({
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
-            fill="rgba(19, 104, 112,1)"
+            fill={theme ? "rgba(19, 104, 112,1)" : "rgba(163, 217, 226, 0.5)"}
             className="bi bi-info-circle"
             viewBox="0 0 16 16"
           >

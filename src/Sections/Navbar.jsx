@@ -11,7 +11,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div>
           {menuOpen ? null : (
             <div className="navbar-item-container d-none d-md-flex d-lg-flex d-xl-flex align-items-center">
-              <div className="me-5 navbar-item">
+              <div className="me-5 navbar-item theme-button">
                 <ThemeButton />
               </div>
               <div className="me-5 navbar-item">

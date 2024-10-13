@@ -3,8 +3,9 @@
 /* font-family: "Urbanist", sans-serif; */
 /* font-family: "Poppins", sans-serif; */
 :root {
-  --sketch-image: url("assets/character/skecth.png");
+  --sketch-image: url("assets/character/sketch.png");
   --primary-color: #136870;
+  --primary-color-hover: #136870;
   --secondary-color: #0d0c22;
   --tertiary-color: #f3f3f4;
   --quaternary-color: #9e9ea7;
@@ -16,10 +17,12 @@
     rgba(0, 0, 0, 0.5)
   );
   --bg-image: url("assets/bg-portfolio.webp");
+  --card-bg-color: rgba(19, 104, 112, 0.5);
+  --menu-bg-color: #000;
 }
 
 html {
-  background-color: #0b0a0a;
+  background-color: var(--menu-bg-color);
 }
 
 body {
@@ -155,7 +158,7 @@ body {
 
 .portfolio-card-top {
   padding: 1.5rem;
-  border: 1px solid rgba(19, 104, 112, 0.5);
+  border: 1px solid var(--card-bg-color);
   background: transparent;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
@@ -165,7 +168,7 @@ body {
 }
 .portfolio-card-bottom {
   padding: 1rem;
-  background-color: rgba(19, 104, 112, 0.5);
+  background-color: var(--card-bg-color);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   font-size: 30px;
@@ -187,7 +190,7 @@ body {
 .skills-card-top {
   min-height: 140px;
   padding: 1.5rem;
-  background-color: rgba(19, 104, 112, 0.5);
+  background-color: var(--card-bg-color);
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   display: flex;
@@ -197,7 +200,7 @@ body {
 .skills-card-bottom {
   padding: 1rem;
   background: transparent;
-  border: 1px solid rgba(19, 104, 112, 0.5);
+  border: 1px solid var(--card-bg-color);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   font-size: 30px;
@@ -220,6 +223,10 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.resume-btn > a {
+  color: var(--secondary-color);
 }
 
 .link-btn {
@@ -263,6 +270,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.contact-text {
+  color: var(--primary-color);
 }
 
 /* FOOTER */
@@ -310,7 +321,17 @@ body {
   margin: 0;
 }
 /* MENU ITEM */
-
+.menu-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--menu-bg-color);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 998;
+}
 .menu {
   z-index: 10;
   width: min-content;
@@ -423,7 +444,7 @@ input:hover,
 }
 
 .send-btn:hover {
-  background-color: #2d8088;
+  background-color: var(--primary-color-hover);
 }
 
 /* The switch - the box around the slider */

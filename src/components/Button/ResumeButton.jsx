@@ -25,7 +25,7 @@ const ResumeButton = () => {
       <a
         onClick={handleDownload}
         href="/"
-        style={{ textDecoration: "none !important", color: "black" }}
+        style={{ textDecoration: "none !important" }}
       >
         <span className="me-2">Resume</span>
         <svg

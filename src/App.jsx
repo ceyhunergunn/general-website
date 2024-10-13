@@ -12,10 +12,10 @@ import Navbar from "./Sections/Navbar";
 import React, { useEffect, useState } from "react";
 import Menu from "./Sections/Menu";
 import { ThemeContext } from "./Context/ThemeContext";
-import sketch from "./assets/character/skecth.png";
-import sketchLight from "./assets/character/skecth-light.png";
+import sketch from "./assets/character/sketch.png";
+import sketchLight from "./assets/character/sketch-light.png";
 import bg from "./assets/bg-portfolio.webp";
-import bgLight from "./assets/bg-portfolio-9.jpg";
+import bgLight from "./assets/bg-portfolio-light.jpg";
 
 function App() {
   const { theme } = React.useContext(ThemeContext);
@@ -25,8 +25,10 @@ function App() {
   }
   useEffect(() => {
     if (theme) {
+      changeCSSVariable("--menu-bg-color", "#000");
       changeCSSVariable("--sketch-image", `url(${sketch})`);
       changeCSSVariable("--primary-color", "#136870");
+      changeCSSVariable("--primary-color-hover", "#2d8088");
       changeCSSVariable("--secondary-color", "#0d0c22");
       changeCSSVariable("--tertiary-color", "#f3f3f4");
       changeCSSVariable("--quaternary-color", "#9e9ea7");
@@ -37,20 +39,23 @@ function App() {
         `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`
       );
       changeCSSVariable("--bg-image", `url(${bg})`);
+      changeCSSVariable("--card-bg-color", "rgba(19, 104, 112, 0.5)");
     } else {
+      changeCSSVariable("--menu-bg-color", "#0e263d");
       changeCSSVariable("--sketch-image", `url(${sketchLight})`);
-      changeCSSVariable("--primary-text-color", "#000");
-      changeCSSVariable("--primary-color", "#136870");
+      changeCSSVariable("--primary-text-color", "#fff");
+      changeCSSVariable("--primary-color", "rgba(163, 217, 226, 0.4)");
+      changeCSSVariable("--primary-color-hover", "rgba(163, 217, 226, 0.2)");
       changeCSSVariable("--secondary-color", "#0d0c22");
       changeCSSVariable("--tertiary-color", "#f3f3f4");
       changeCSSVariable("--quaternary-color", "#9e9ea7");
       changeCSSVariable("--quinary-color", "#ffe4f8");
-
       changeCSSVariable(
         "--bg-gradient",
-        `linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2))`
+        `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`
       );
       changeCSSVariable("--bg-image", `url(${bgLight})`);
+      changeCSSVariable("--card-bg-color", "rgba(163, 217, 226, 0.4)");
     }
     //eslint-disable-next-line
   }, [theme]);

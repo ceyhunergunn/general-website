@@ -122,9 +122,7 @@ const Contact = () => {
           </form>
           <ul className="site-contact-details row">
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase" style={{ color: "#136870" }}>
-                Email
-              </div>
+              <div className="text-uppercase contact-text">Email</div>
               <div
                 className="d-flex align-items-center justify-content-center flex-column"
                 style={{ height: "75px" }}
@@ -140,9 +138,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase" style={{ color: "#136870" }}>
-                Phone
-              </div>
+              <div className="text-uppercase contact-text">Phone</div>
               <div
                 className="d-flex align-items-center justify-content-center flex-column"
                 style={{ height: "75px" }}
@@ -153,9 +149,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-              <div className="text-uppercase" style={{ color: "#136870" }}>
-                Address
-              </div>
+              <div className="text-uppercase contact-text">Address</div>
               <div
                 className="d-flex align-items-center justify-content-center flex-column"
                 style={{ height: "75px" }}

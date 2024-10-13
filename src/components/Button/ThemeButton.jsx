@@ -3,7 +3,6 @@ import { ThemeContext } from "../../Context/ThemeContext";
 
 export const ThemeButton = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
-  console.log(theme);
   return (
     <div className="d-flex align-items-center justify-content-center">
       <label id="theme-toggle-button">

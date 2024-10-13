@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../Context/ThemeContext";
 
 const Footer = () => {
+  const { theme } = React.useContext(ThemeContext);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -51,7 +53,7 @@ const Footer = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
-                  fill="#000"
+                  fill={theme ? "#000" : "#fff"}
                   className="m-auto bi bi-linkedin"
                   viewBox="0 0 16 16"
                 >
@@ -71,7 +73,7 @@ const Footer = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
-                  fill="#000"
+                  fill={theme ? "#000" : "#fff"}
                   className="m-auto bi bi-github"
                   viewBox="0 0 16 16"
                 >
