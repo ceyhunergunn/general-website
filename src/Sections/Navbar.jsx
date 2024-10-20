@@ -46,7 +46,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             <ThemeButton />
             <Hamburger
               direction="right"
-              color="#136870"
+              color="#fff"
               toggled={menuOpen}
               onToggle={(toggle) => {
                 setMenuOpen(toggle);

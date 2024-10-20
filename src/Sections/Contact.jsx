@@ -72,7 +72,7 @@ const Contact = () => {
           {" "}
           <div className="text-center">
             <h1>
-              <strong>Get In Touch</strong>
+              <strong style={{ fontSize: "40px" }}>Get In Touch</strong>
             </h1>
           </div>
         </div>

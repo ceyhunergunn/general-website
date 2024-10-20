@@ -25,7 +25,7 @@ const Skills = () => {
         {" "}
         <div className="section-heading text-center py-5">
           <h1>
-            <strong>Skills</strong>
+            <strong style={{ fontSize: "40px" }}>Skills</strong>
           </h1>
         </div>
       </div>

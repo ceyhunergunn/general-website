@@ -63,7 +63,7 @@ const Portfolio = () => {
         {" "}
         <div className="section-heading text-center py-5">
           <h1>
-            <strong>Portfolio</strong>
+            <strong style={{ fontSize: "40px" }}>Portfolio</strong>
           </h1>
         </div>
       </div>
