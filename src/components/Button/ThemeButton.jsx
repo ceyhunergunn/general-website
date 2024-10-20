@@ -4,11 +4,8 @@ import { ThemeContext } from "../../Context/ThemeContext";
 export const ThemeButton = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
   return (
-    <div
-      className="d-flex align-items-center justify-content-center"
-      style={{ cursor: "pointer" }}
-    >
-      <label id="theme-toggle-button">
+    <div className="d-flex align-items-center justify-content-center">
+      <label id="theme-toggle-button" style={{ cursor: "pointer" }}>
         <input
           type="checkbox"
           id="toggle"
